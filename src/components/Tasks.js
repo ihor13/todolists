@@ -1,10 +1,14 @@
 import React from 'react';
 
 import react from 'react';
-import {Checkbox} from './Checkbox';
+import { useTasks } from '../hooks';
+import { Checkbox } from './Checkbox';
+
 
 export const Tasks = () => {
-    const tasks = [];
+    const { tasks } = useTasks('1');
+
+    console.log(tasks);
 
     let projectName = '';
 
